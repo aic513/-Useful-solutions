@@ -1,0 +1,5 @@
+<input type="file" name="upload" id="upload_hidden" style="position: absolute; display: block; overflow: hidden; width: 0; height: 0; border: 0; padding: 0;" onchange="document.getElementById('upload_visible').value = this.value;" />
+  <input type="text" readonly="1" id="upload_visible" onclick="document.getElementById('upload_hidden').click();" />
+  <button onclick="document.getElementById('upload_hidden').click();">Обзор</button>
+  
+  При загрузке на сайт или любую CMS у button надо поставить type="button"
